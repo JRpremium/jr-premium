@@ -36,13 +36,27 @@
             text-align: center;
         }
 
-        .logo {
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .logo-text {
             font-size: 1.7rem;
             font-weight: 900;
             letter-spacing: 2px;
             background: linear-gradient(45deg, var(--primary), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .logo-img {
+            max-width: 200px;
+            height: auto;
+            margin-top: 10px;
         }
 
         .hero {
@@ -154,13 +168,16 @@
 <body>
 
 <header>
-    <div class="logo">JR PREMIUM</div>
+    <div class="logo-container">
+        <div class="logo-text">JR PREMIUM</div>
+        <img src="/mnt/data/logo.jpeg" alt="JR Premium Logo" class="logo-img"> <!-- Caminho para sua logo -->
+    </div>
 </header>
 
 <section class="hero">
     <div class="container">
         <h1>IPTV Premium Estável, Rápido e em 4K</h1>
-        <p>Assista futebol, filmes, séries e canais ao vivo sem travamentos. Compatível com Smart TV, celular e TV Box.</p>
+        <p>Assista FUTEBOL, FILMES, SÉRIES e CANAIS ao vivo sem travamentos. Compatível com Smart TV, celular e TV Box.</p>
         <a href="https://wa.me/5585982213259?text=Quero%20um%20teste%20gratis%20JR%20Premium" class="btn">TESTE GRÁTIS AGORA</a>
     </div>
 </section>
@@ -176,17 +193,17 @@
 <section class="pricing container">
     <div class="card">
         <h3>Mensal</h3>
-        <div class="price">R$ 35</div> <!-- Valor alterado -->
+        <div class="price">R$ 35</div>
         <a class="btn" href="https://wa.me/5585982213259?text=Quero%20um%20teste%20gratis%20JR%20Premium">Assinar</a>
     </div>
     <div class="card featured">
         <h3>Trimestral</h3>
-        <div class="price">R$ 95</div> <!-- Valor alterado -->
+        <div class="price">R$ 95</div>
         <a class="btn" href="https://wa.me/5585982213259?text=Quero%20um%20teste%20gratis%20JR%20Premium">Assinar</a>
     </div>
     <div class="card">
         <h3>Anual</h3>
-        <div class="price">R$ 320</div> <!-- Valor alterado -->
+        <div class="price">R$ 320</div>
         <a class="btn" href="https://wa.me/5585982213259?text=Quero%20um%20teste%20gratis%20JR%20Premium">Assinar</a>
     </div>
 </section>
